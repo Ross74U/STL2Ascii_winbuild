@@ -1,0 +1,9 @@
+# TO CLEAN UP
+rm *.o
+rm *.exe
+
+# TO BUILD (be in directory STL2Ascii)
+using MinGW:
+
+g++ -std=c++17 -Wall -c src/main.cpp src/log.cpp src/VertexTensor.cpp src/TensorArray.cpp src/Render.cpp
+g++ -std=c++17 -Wall -o main.exe main.o log.o VertexTensor.o TensorArray.o Render.o
